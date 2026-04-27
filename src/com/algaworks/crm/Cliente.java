@@ -1,6 +1,6 @@
 package com.algaworks.crm;
 
-public class Cliente {
+public class Cliente implements Nomeavel {
     private String razaoSocial;
     private double faturamentoMensal;
 
@@ -24,5 +24,18 @@ public class Cliente {
 
     public void setRazaoSocial(String razaoSocial) {
         this.razaoSocial = razaoSocial;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "faturamentoMensal=" + faturamentoMensal +
+                ", razaoSocial='" + razaoSocial + '\'' +
+                '}';
+    }
+
+    @Override
+    public String getNome() {
+        return getRazaoSocial();
     }
 }
