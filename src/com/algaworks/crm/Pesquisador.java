@@ -2,10 +2,10 @@ package com.algaworks.crm;
 
 public class Pesquisador {
 
-    public static <T extends Nomeavel> T obterPorNome(T[] funcionarios, String nome) {
-        for (T funcionario : funcionarios) {
-            if (funcionario.getNome().equals(nome)) {
-                return funcionario;
+    public static <T extends Nomeavel> T obterPorNome(T[] itens, String nome) {
+        for (T item : itens) {
+            if (item.getNome().equals(nome)) {
+                return item;
             }
         }
 
