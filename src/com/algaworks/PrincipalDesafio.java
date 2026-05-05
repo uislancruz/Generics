@@ -6,14 +6,14 @@ import com.algaworks.desafio.Roupa;
 
 public class PrincipalDesafio {
     static void main(String[] args) {
-        GerenciadorEstoque estoqueRoupas = new GerenciadorEstoque();
+        GerenciadorEstoque<Roupa> estoqueRoupas = new GerenciadorEstoque();
         estoqueRoupas.adicionar(new Carro("BMW X1", 4));
         estoqueRoupas.adicionar(new Roupa("Camiseta básica branca", 2));
         estoqueRoupas.adicionar(new Roupa("Camiseta básica preta", 2));
 
         imprimirEstoque(estoqueRoupas);
 
-        GerenciadorEstoque estoqueCarro = new GerenciadorEstoque();
+        GerenciadorEstoque<Carro> estoqueCarro = new GerenciadorEstoque();
         estoqueCarro.adicionar(new Carro("BMW X1", 4));
         estoqueCarro.adicionar(new Carro("Honda HR-V", 8));
         imprimirEstoque(estoqueCarro);

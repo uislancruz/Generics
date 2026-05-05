@@ -1,6 +1,6 @@
 package com.algaworks.desafio;
 
-public class GerenciadorEstoque {
+public class GerenciadorEstoque <T extends Estocavel> {
 
     private int quantidadeTotal;
 
@@ -10,5 +10,9 @@ public class GerenciadorEstoque {
 
     public int getQuantidadeTotal() {
         return quantidadeTotal;
+    }
+
+    public int getQuantidadeEstoque() {
+        return 0;
     }
 }
